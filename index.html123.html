@@ -1,5 +1,4 @@
-﻿<!
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
@@ -14,26 +13,21 @@
             margin: 0;
             padding: 0;
         }
-
         header {
             margin-top: 50px;
         }
-
         .site-title {
             color: #BF212E;
             font-size: 48px;
             margin: 0;
         }
-
         .welcome-message {
             font-size: 24px;
             margin: 0;
         }
-
         nav {
             margin-top: 50px;
         }
-
         .nav-link {
             display: inline-block;
             margin: 0 10px;
@@ -42,15 +36,34 @@
             color: black;
             background-color: #f0f0f0;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
         }
-
-            .nav-link:hover {
-                background-color: #e0e0e0;
-            }
-
+        .nav-link:hover {
+            background-color: #e0e0e0;
+            transform: scale(1.1);
+        }
         section {
             margin-top: 50px;
+            padding: 20px;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            text-align: left;
+        }
+        .content h2 {
+            color: #BF212E;
+            font-size: 32px;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            color: #333;
         }
     </style>
 </head>
@@ -66,20 +79,31 @@
         <a href="#writing" class="nav-link">Writing</a>
     </nav>
     <section id="home">
-        <h2>Home</h2>
-        <p>Welcome to the Home section.</p>
+        <div class="content">
+            <h2>Home</h2>
+            <p>مرحبًا بكم في قسم المنزل. هنا يمكنك العثور على أحدث الأخبار والمستجدات عن تفانين.</p>
+        </div>
     </section>
     <section id="studio">
-        <h2>Studio</h2>
-        <p>Welcome to the Studio section.</p>
+        <div class="content">
+            <h2>Studio</h2>
+            <p>مرحبًا بكم في قسم الاستوديو. هنا نعرض لك أحدث أعمالنا الفنية والمشاريع التي نعمل عليها.</p>
+        </div>
     </section>
     <section id="printing">
-        <h2>Printing</h2>
-        <p>Welcome to the Printing section.</p>
+        <div class="content">
+            <h2>Printing</h2>
+            <p>مرحبًا بكم في قسم الطباعة. تعرف على تقنيات الطباعة الخاصة بنا وكيف يمكننا مساعدتك في مشاريع الطباعة الخاصة بك.</p>
+        </div>
     </section>
     <section id="writing">
-        <h2>Writing</h2>
-        <p>Welcome to the Writing section.</p>
+        <div class="content">
+            <h2>Writing</h2>
+            <p>مرحبًا بكم في قسم الكتابة. اكتشف مقالاتنا وكتاباتنا المتنوعة في مجالات مختلفة.</p>
+        </div>
     </section>
+    <footer>
+        <p>&copy; 2024 تفانين. جميع الحقوق محفوظة.</p>
+    </footer>
 </body>
 </html>
